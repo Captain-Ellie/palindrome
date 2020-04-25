@@ -9,8 +9,8 @@ public class Main {
             while (!input.equals("exit")) {
                 System.out.print("Type a sentence/word to check: ");
                 input = reader.readLine();
-                input = input.replaceAll("\\s+","")
-                        .replaceAll("\\p{Punct}","")
+                input = input.replaceAll("\\s+", "")
+                        .replaceAll("\\p{Punct}", "")
                         .toLowerCase();
                 if (isPalindrome(input)) {
                     System.out.print("Palindrome\n");
