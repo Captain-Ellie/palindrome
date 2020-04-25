@@ -2,6 +2,7 @@ package com.company;
 import java.io.*;
 
 public class Main {
+    
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             String input = "";
@@ -19,8 +20,8 @@ public class Main {
             ex.printStackTrace();
         }
     }
+    
     static boolean isPalindrome(String input) {
-
         int a = 0, z = input.length() - 1;
         while (z > a) {
             if (input.charAt(a) != input.charAt(z)) {
@@ -31,4 +32,5 @@ public class Main {
         }
         return true;
     }
+    
 }
